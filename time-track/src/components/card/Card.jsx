@@ -21,7 +21,7 @@ export default function Card({ item, period }) {
         ${item.title === "Self Care" ? "self-care" : ""}
         `}></div>
         <div className="card-body">
-          
+
             <div className="d-flex justify-content-between align-items-center">
                 <h6>{item.title}</h6>
                 <div className="d-flex align-items-center">
@@ -30,21 +30,21 @@ export default function Card({ item, period }) {
             </div>
 
             {period === "daily" && (
-              <div>
+              <div className="times">
                 <h1>{item.timeframes.daily.current}hrs</h1>
                 <p className="last">Last week: {item.timeframes.daily.previous}hrs</p>
               </div>
             )}
 
             {period === "weekly" && (
-              <div>
+              <div className="times">
                 <h1>{item.timeframes.weekly.current}hrs</h1>
                 <p className="last">Last week: {item.timeframes.weekly.previous}hrs</p>
               </div>
             )}
 
             {period === "monthly" && (
-              <div>
+              <div className="times">
                 <h1>{item.timeframes.monthly.current}hrs</h1>
                 <p className="last">Last week: {item.timeframes.monthly.previous}hrs</p>
               </div>

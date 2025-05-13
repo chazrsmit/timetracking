@@ -18,7 +18,7 @@ body {
 }
 
 /* Tablettes */
-@media (min-width: 568px) {
+@media (min-width: 670px) {
   .section-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
