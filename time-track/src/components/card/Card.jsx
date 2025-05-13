@@ -1,6 +1,6 @@
 import './card.css';
 
-export default function Card({ item, period }) {
+export default function Card({ item, period, isLight }) {
 
   return (
 
@@ -20,7 +20,7 @@ export default function Card({ item, period }) {
         ${item.title === "Social" ? "social" : ""}
         ${item.title === "Self Care" ? "self-care" : ""}
         `}></div>
-        <div className="card-body">
+        <div className={`card-body ${isLight === true ? "light" : ""}`}>
 
             <div className="d-flex justify-content-between align-items-center">
                 <h6>{item.title}</h6>

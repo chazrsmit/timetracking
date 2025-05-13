@@ -9,16 +9,20 @@ body {
   font-family: "Rubik";
 }
 
+.div-mode {
+  padding: 2rem;
+}
+
 /* Téléphones */
 .section-wrapper {
   display: grid;
   gap: 2rem;
   padding: 2rem;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
 }
 
 /* Tablettes */
-@media (min-width: 670px) {
+@media (min-width: 600px) {
   .section-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }

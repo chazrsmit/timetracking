@@ -5,7 +5,7 @@ export default function User(props) {
 
     return(
         <>
-        <div className="user">
+        <div className={`user ${props.isLight === true ? "light" : ""}`}>
             <div className="user-infos">
                 <div className="div-img">
                     <img src={img} alt={props.name} />
@@ -15,7 +15,7 @@ export default function User(props) {
                     <h1 className="m-0">{props.name}</h1>
                 </div>
             </div>
-            <div className="user-frequency gap-3">
+            <div className={`user-frequency gap-3 ${props.isLight === true ? "light" : ""}`}>
                 <div onClick={props.handleClick} id="daily" className={`${props.period === "daily" ? "clicked" : ""}`}>Daily</div>
                 <div onClick={props.handleClick} id="weekly" className={`${props.period === "weekly" ? "clicked" : ""}`}>Weekly</div>
                 <div onClick={props.handleClick} id="monthly" className={`${props.period === "monthly" ? "clicked" : ""}`}>Monthly</div>

@@ -10,6 +10,10 @@
     flex-direction: column;
 }
 
+.user.light {
+    background-color: #d8dad3;
+}
+
 .user img {
     width: 100px;
     height: 100px;
@@ -51,6 +55,10 @@
     color: hsl(236, 100%, 87%);
     margin: 0;
 }
+
+/* .user-frequency.light {
+    background-color: #d8dad3;
+} */
 
 #daily, #weekly, #monthly {
     cursor: pointer;
