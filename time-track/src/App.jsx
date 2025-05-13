@@ -15,7 +15,7 @@ function App() {
   // on va dire que de base, on va voir les éléments "daily"
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch('${process.env.PUBLIC_URL}/data.json')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
