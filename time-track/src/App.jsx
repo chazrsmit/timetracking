@@ -15,7 +15,7 @@ function App() {
   // on va dire que de base, on va voir les éléments "daily"
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch('../public/data.json')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -23,7 +23,7 @@ function App() {
 
   // On vérifie que les données existent 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div>Cannot find data...</div>;
   }
 
   let handleClick = (e) => {
