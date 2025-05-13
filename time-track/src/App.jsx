@@ -9,7 +9,7 @@ function App() {
   // Attention, les variables d'état/useState doivent TOUJOURS être appelés au début.
 
   // Pour importer les données
-  const [data, setData] = useState(json);
+  const [data] = useState(json);
   
   // Pour vérifier si l'élément cliqué est "daily", "weekly" ou "monthly", on va devoir créer une variable d'état
   const [period, setPeriod] = useState("daily")
