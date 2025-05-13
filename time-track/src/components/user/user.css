@@ -1,4 +1,17 @@
 .user {
-    grid-column: 1 / 2 ;
-    grid-row: 1 / span 2 ;
+        grid-column: auto;
+}
+
+@media (min-width: 1023px) { 
+    .user {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 / span 2 !important; 
+    }
+}
+
+@media (min-width: 568px) {
+    .user {
+        grid-column: 1 / span 2;
+        grid-row: auto;
+    }
 }
