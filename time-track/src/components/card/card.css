@@ -1,0 +1,97 @@
+.dots {
+    cursor: pointer;
+}
+
+.cards {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.cards.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.cards.play {
+    background-color:  hsl(195, 74%, 62%);
+}
+
+.cards.study {
+    background-color:  hsl(348, 100%, 68%);
+}
+
+.cards.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.cards.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.cards.self-care {
+    background-color:  hsl(43, 84%, 65%);
+}
+
+.card-top {
+    height: 40px;
+}
+
+.card-body {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.card-body h1 {
+    font-weight: 300;
+}
+
+.card-top.work {
+    background: url('../../time-tracking-dashboard-main/images/icon-work.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.card-top.play {
+    background: url('../../time-tracking-dashboard-main/images/icon-play.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.card-top.study {
+    background: url('../../time-tracking-dashboard-main/images/icon-study.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.card-top.exercise {
+    background: url('../../time-tracking-dashboard-main/images/icon-exercise.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.card-top.social {
+    background: url('../../time-tracking-dashboard-main/images/icon-social.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.card-top.self-care {
+    background: url('../../time-tracking-dashboard-main/images/icon-self-care.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* .none {
+    display: none;
+} */

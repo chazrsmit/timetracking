@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  font-family: "Rubik";
+}
+
+/* Téléphones */
+.section-wrapper {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  grid-template-columns: 1fr;
+}
+
+/* Tablettes */
+@media (min-width: 568px) {
+  .section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Ordis */
+@media (min-width: 1023px) {
+  body {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .section-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, auto); */
+  }
+}
