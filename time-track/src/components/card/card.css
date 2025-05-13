@@ -121,7 +121,11 @@
 
 .times p {
     text-align: right;
-    padding-top: 2vh;
+    padding-top: 1vh;
+}
+
+.last {
+    width: 100px;
 }
 
 @media (min-width:1023px) {
@@ -134,6 +138,11 @@
         text-align: left;
         padding-top: 0;
     }
+
+    .last {
+        width: auto;
+}
+
 }
 
 /* Polices */

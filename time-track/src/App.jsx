@@ -2,24 +2,18 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './components/card/Card';
 import User from './components/user/User';
+import json from './data.json'
 
 function App() {
 
   // Attention, les variables d'état/useState doivent TOUJOURS être appelés au début.
 
   // Pour importer les données
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(json);
   
   // Pour vérifier si l'élément cliqué est "daily", "weekly" ou "monthly", on va devoir créer une variable d'état
-  const [period, setPeriod] = useState("daily") 
-  // on va dire que de base, on va voir les éléments "daily"
-
-  useEffect(() => {
-    fetch('${process.env.PUBLIC_URL}/data.json')
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  const [period, setPeriod] = useState("daily")
+  // on va dire que de se, on va voir les éléments "daily"
 
   // On vérifie que les données existent 
   if (!data) {
