@@ -59,6 +59,7 @@
 }
 
 .div-change p {
+    font-size: 14px;
     transition: all 0.1s ease-in
 }
 
