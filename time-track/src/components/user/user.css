@@ -120,6 +120,10 @@
     color: black !important;
 }
 
+.toggle-div {
+    cursor: pointer;
+}
+
 @media (max-width: 460px) {
     .user-infos {
         flex-direction: column;
