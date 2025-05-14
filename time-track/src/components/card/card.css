@@ -69,7 +69,7 @@
 }
 
 .card-body.light {
-    background-color: #d8dad3;
+    background-color: #EFD6D2;
     color: black;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .card-body.light:hover {
-    background-color: #a4c2a5;
+    background-color: #BB9BB0;
     cursor: pointer;
 }
 

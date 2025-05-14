@@ -11,7 +11,7 @@
 }
 
 .user.light {
-    background-color: #d8dad3;
+    background-color: #EFD6D2;
 }
 
 .user img {
@@ -31,6 +31,10 @@
     flex: 3;
     display: flex;
     gap: 24px;
+}
+
+.user-infos.light {
+    background-color: #a288a6;
 }
 
 .user-infos h1 {

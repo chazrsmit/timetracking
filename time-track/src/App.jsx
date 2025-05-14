@@ -36,7 +36,7 @@ function App() {
       setIsLight(true)
       // pMode.innerText = "Dark mode"
       // pMode.style.color = "black"
-      document.body.style.backgroundColor = "#F1F2EB"
+      document.body.style.backgroundColor = "#EEE1E7"
     }
 
     else {

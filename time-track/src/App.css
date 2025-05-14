@@ -11,16 +11,16 @@ body {
 
 .div-mode {
   /* padding: 2rem; */
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   padding-bottom: 0.5rem;
   display: flex;
   justify-content: center;
-  background-color: hsl(235, 46%, 20%);
+  /* background-color: hsl(235, 46%, 20%); */
 }
 
-.div-mode.light {
+/* .div-mode.light {
   background-color: #d8dad3;
-}
+} */
 
 .icon-toggle1, .icon-toggle2 {
   font-size: 24px;
@@ -56,13 +56,13 @@ body {
 /* Ordis */
 @media (min-width: 1023px) {
   body {
-    padding-bottom: 4vw;
+    padding-bottom: clamp(10px, 2vw, 60px);
     /* padding-left: 8vw; */
     /* padding-right: 8vw; */
   }
 
   .section-wrapper {
-    padding-top: 8vw;
+    padding-top: 6.6vw;
     padding-left: clamp(10px, 5vw, 60px);
     padding-right: clamp(10px, 5vw, 60px);
     grid-template-columns: repeat(4, 1fr);

@@ -6,7 +6,7 @@ export default function User(props) {
     return(
         <>
         <div className={`user ${props.isLight === true ? "light" : ""}`}>
-            <div className="user-infos">
+            <div className={`user-infos ${props.isLight === true ? "light" : ""}`}>
                 <div className="div-img">
                     <img src={img} alt={props.name} />
                 </div>
