@@ -34,16 +34,12 @@ function App() {
   let lightClick = () => {
     if (!isLight) { 
       setIsLight(true)
-      // pMode.innerText = "Dark mode"
-      // pMode.style.color = "black"
       document.body.style.backgroundColor = "#EEE1E7"
     }
 
     else {
       setIsLight(false)
-      // pMode.innerText = "Light mode"
       document.body.style.backgroundColor = "hsl(226, 43%, 10%)"
-      // pMode.style.color = "white"
     }
 
   }
@@ -52,7 +48,6 @@ function App() {
  
     <>
       <div className={`div-mode ${isLight? 'light' : ''}`}>
-        {/* <p id="pMode" className="m-0" onClick={lightClick}>Light mode</p> */}
         <FontAwesomeIcon className={`icon-toggle1 ${isLight? 'hidden' : ''}`} icon={faSun} onClick={lightClick} />
         <FontAwesomeIcon className={`icon-toggle2 ${isLight? '' : 'hidden'}`} icon={faMoon} onClick={lightClick} />
       </div>
