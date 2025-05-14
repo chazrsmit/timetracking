@@ -58,6 +58,14 @@
     cursor: pointer;
 }
 
+.div-change p {
+    transition: all 0.1s ease-in
+}
+
+.div-change p:hover {
+    font-weight: 400;
+}
+
 .user-frequency {
     padding: 30px;
     flex: 1;
