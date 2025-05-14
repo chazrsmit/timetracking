@@ -24,7 +24,7 @@ export default function User(props) {
                 </div>
                 <div className="userInfos-div2">
                     <div className="div-change">
-                        <p onClick={props.changeUser}>Switch user</p>
+                        <p onClick={props.changeUser}>Switch user</p>   
                     </div>
                 </div>
             </div>
