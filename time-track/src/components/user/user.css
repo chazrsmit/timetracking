@@ -60,7 +60,8 @@
 
 .div-change p {
     font-size: 14px;
-    transition: all 0.1s ease-in
+    transition: all 0.1s ease-in;
+    margin:0;
 }
 
 .div-change p:hover {

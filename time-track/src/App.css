@@ -12,7 +12,7 @@ body {
 .div-mode {
   /* padding: 2rem; */
   padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   /* background-color: hsl(235, 46%, 20%); */
@@ -56,11 +56,14 @@ body {
 /* Ordis */
 @media (min-width: 1023px) {
   body {
-    padding-bottom: clamp(10px, 2vw, 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: clamp(10px, 2vw, 60px); */
   }
 
   .section-wrapper {
-    padding-top: 5vw;
+    /* padding-top: 6vw; */
     padding-left: clamp(20px, 4.2vw, 70px);
     padding-right: clamp(20px, 4.2vw, 70px);
     grid-template-columns: repeat(4, 1fr);
