@@ -7,15 +7,19 @@ export default function User(props) {
         <>
         <div className={`user ${props.isLight === true ? "light" : ""}`}>
             <div className={`user-infos ${props.isLight === true ? "light" : ""}`}>
-                <div className="div-img">
-                    <img src={img} alt={props.name} />
+                <div className="userInfos-div1">
+                    <div className="div-img">
+                        <img src={img} alt={props.name} />
+                    </div>
+                    <div className='d-flex flex-column justify-content-center'>
+                        <p className="m-0">Report for</p>
+                        <h1 className="m-0">{props.name}</h1>
+                    </div>
                 </div>
-                <div className='d-flex flex-column justify-content-center'>
-                    <p className="m-0">Report for</p>
-                    <h1 className="m-0">{props.name}</h1>
-                </div>
-                <div className="div-change">
-                    <p onClick={props.changeUser}>Change user</p>
+                <div className="userInfos-div2">
+                    <div className="div-change">
+                        <p onClick={props.changeUser}>Switch user</p>
+                    </div>
                 </div>
             </div>
             <div className={`user-frequency gap-3 ${props.isLight === true ? "light" : ""}`}>

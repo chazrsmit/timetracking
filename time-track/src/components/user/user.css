@@ -30,6 +30,12 @@
     padding-bottom: 40px;
     flex: 3;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfos-div1 {
+    display: flex;
     gap: 24px;
 }
 
@@ -100,6 +106,12 @@
         padding-bottom: 70px;
         flex-direction: column;
         justify-content: space-between;
+        gap: 24px;
+        align-items: start;
+    }
+
+    .userInfos-div1 {
+        flex-direction: column;
     }
 
     .user-frequency {
