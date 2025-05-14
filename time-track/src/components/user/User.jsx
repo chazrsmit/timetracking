@@ -16,9 +16,15 @@ export default function User(props) {
                 </div>
             </div>
             <div className={`user-frequency gap-3 ${props.isLight === true ? "light" : ""}`}>
-                <div onClick={props.handleClick} id="daily" className={`${props.period === "daily" ? "clicked" : ""}`}>Daily</div>
-                <div onClick={props.handleClick} id="weekly" className={`${props.period === "weekly" ? "clicked" : ""}`}>Weekly</div>
-                <div onClick={props.handleClick} id="monthly" className={`${props.period === "monthly" ? "clicked" : ""}`}>Monthly</div>
+                <div onClick={props.handleClick} id="daily" className={`
+                    ${props.period === "daily" ? "clicked" : ""}
+                    ${props.isLight? 'light' : ''}`}>Daily</div>
+                <div onClick={props.handleClick} id="weekly" className={`
+                    ${props.period === "weekly" ? "clicked" : ""}
+                    ${props.isLight? 'light' : ''}`}>Weekly</div>
+                <div onClick={props.handleClick} id="monthly" className={`
+                    ${props.period === "monthly" ? "clicked" : ""}
+                    ${props.isLight? 'light' : ''}`}>Monthly</div>
             </div>
         </div>
         </>

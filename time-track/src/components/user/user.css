@@ -67,11 +67,19 @@
     font-size: 18px;
 }
 
+#daily.light, #weekly.light, #monthly.light {
+    color: black;
+}
+
 /* Attention à bien associer la classe .clicked aux id dans le CSS sinon les propriétés de l'id prendront le dessus */
 #daily.clicked, #weekly.clicked, #monthly.clicked {
     opacity: 1;
     font-weight: 600;
     color: white !important;
+}
+
+#daily.clicked.light, #weekly.clicked.light, #monthly.clicked.light {
+    color: black !important;
 }
 
 /* ordis */

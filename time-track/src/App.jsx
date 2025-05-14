@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Card from './components/card/Card';
 import User from './components/user/User';
-import json from './data.json'
+import json from './data.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 
@@ -32,16 +34,16 @@ function App() {
   let lightClick = () => {
     if (!isLight) { 
       setIsLight(true)
-      pMode.innerText = "Dark mode"
-      pMode.style.color = "black"
+      // pMode.innerText = "Dark mode"
+      // pMode.style.color = "black"
       document.body.style.backgroundColor = "#F1F2EB"
     }
 
     else {
       setIsLight(false)
-      pMode.innerText = "Light mode"
+      // pMode.innerText = "Light mode"
       document.body.style.backgroundColor = "hsl(226, 43%, 10%)"
-      pMode.style.color = "white"
+      // pMode.style.color = "white"
     }
 
   }
@@ -52,8 +54,9 @@ function App() {
  
     <>
       <div className="div-mode">
-        <p id="pMode" className="m-0" onClick={lightClick}>Light mode</p>
-        {/* <i class="fa-regular fa-sun"></i> */}
+        {/* <p id="pMode" className="m-0" onClick={lightClick}>Light mode</p> */}
+        <FontAwesomeIcon className={`icon-toggle1 ${isLight? 'hidden' : ''}`} icon={faSun} onClick={lightClick} />
+        <FontAwesomeIcon className={`icon-toggle2 ${isLight? '' : 'hidden'}`} icon={faMoon} onClick={lightClick} />
       </div>
       <section className="section-wrapper">
         <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight}/>

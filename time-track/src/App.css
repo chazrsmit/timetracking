@@ -13,6 +13,18 @@ body {
   padding: 2rem;
 }
 
+.icon-toggle1.hidden {
+  display: none;
+}
+
+.icon-toggle2 {
+  color: black;
+}
+
+.icon-toggle2.hidden {
+  display: none;
+}
+
 /* Téléphones */
 .section-wrapper {
   display: grid;
