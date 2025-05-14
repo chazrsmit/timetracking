@@ -86,10 +86,6 @@
     cursor: pointer;
 }
 
-.card-body h1 {
-    font-weight: 300;
-}
-
 .card-top.work {
     background: url('../../time-tracking-dashboard-main/images/icon-work.svg');
     background-size: contain;
@@ -201,4 +197,5 @@
 
 .card-body h1 {
     font-size: 56px;
+    font-weight: 300;
 }

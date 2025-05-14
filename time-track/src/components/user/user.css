@@ -44,6 +44,7 @@
 }
 
 .user-infos h1 {
+    font-size: clamp(20px, 1vw + 1.5rem, 40px) !important;
     font-weight: 300;
     max-width: 200px;
 }
@@ -125,6 +126,14 @@
 
     .user-frequency {
         flex-direction: column;
+    }
+
+    #daily, #weekly, #monthly {
+        width: 20%;
+    }
+
+    .user-infos h1 {
+        width: 150px;
     }
 }
 

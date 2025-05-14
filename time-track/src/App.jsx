@@ -47,7 +47,7 @@ function App() {
   let lightClick = () => {
     if (!isLight) { 
       setIsLight(true)
-      document.body.style.backgroundColor = "#EEE1E7"
+      document.body.style.backgroundColor = "#E9DAE1"
       document.body.style.transition = "all 0.2s"
     }
 
