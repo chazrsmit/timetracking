@@ -9,6 +9,7 @@ export default function Card({ item, period, isLight }) {
     ${item.title === "Play" ? "play" : ""}
     ${item.title === "Study" ? "study" : ""}
     ${item.title === "Exercise" ? "exercise" : ""}
+    ${item.title === "Reading" ? "reading" : ""}
     ${item.title === "Social" ? "social" : ""}
     ${item.title === "Self Care" ? "self-care" : ""}
     `}>
@@ -17,6 +18,7 @@ export default function Card({ item, period, isLight }) {
         ${item.title === "Play" ? "play" : ""}
         ${item.title === "Study" ? "study" : ""}
         ${item.title === "Exercise" ? "exercise" : ""}
+        ${item.title === "Reading" ? "reading" : ""}
         ${item.title === "Social" ? "social" : ""}
         ${item.title === "Self Care" ? "self-care" : ""}
         `}></div>

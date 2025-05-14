@@ -41,6 +41,10 @@
     background-color: hsl(145, 58%, 55%);
 }
 
+.cards.reading {
+    background-color: hotpink;
+}
+
 .cards.social {
     background-color: hsl(264, 64%, 52%);
 }
@@ -94,10 +98,11 @@
 }
 
 .card-top.play {
-    background: url('../../time-tracking-dashboard-main/images/icon-play.svg');
+    background-image: url('../../time-tracking-dashboard-main/images/icon-play.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+    background-blend-mode: lighten;
 }
 
 .card-top.study {
@@ -112,6 +117,14 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.card-top.reading {
+    background: url('../../time-tracking-dashboard-main/images/glasses-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.2;
 }
 
 .card-top.social {

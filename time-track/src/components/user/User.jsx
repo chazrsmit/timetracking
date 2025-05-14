@@ -14,6 +14,9 @@ export default function User(props) {
                     <p className="m-0">Report for</p>
                     <h1 className="m-0">{props.name}</h1>
                 </div>
+                <div className="div-change">
+                    <p onClick={props.changeUser}>Change user</p>
+                </div>
             </div>
             <div className={`user-frequency gap-3 ${props.isLight === true ? "light" : ""}`}>
                 <div onClick={props.handleClick} id="daily" className={`
