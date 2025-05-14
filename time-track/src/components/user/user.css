@@ -39,6 +39,12 @@
     gap: 24px;
 }
 
+.userInfos-div2 {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
 .user-infos.light {
     background-color: #a288a6;
 }
@@ -132,6 +138,10 @@
 
     .userInfos-div1 {
         flex-direction: column;
+    }
+
+    .userInfos-div2 {
+    gap:10px;
     }
 
     .user-frequency {

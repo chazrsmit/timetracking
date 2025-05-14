@@ -4,8 +4,6 @@ import Card from './components/card/Card';
 import User from './components/user/User';
 import json from './data.json';
 import json2 from './data2.json'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 
@@ -76,18 +74,18 @@ function App() {
   return (
  
     <>
-      <div className="div-mode">
+      {/* <div className="div-mode">
         <div className="toggle-div px-1 py-1" onClick={lightClick}>
           <FontAwesomeIcon className={`icon-toggle1 ${isLight? 'hidden' : ''}`} icon={faSun} />
           <FontAwesomeIcon className={`icon-toggle2 ${isLight? '' : 'hidden'}`} icon={faMoon} />
         </div>
-      </div>
+      </div> */}
 
       <section className="section-wrapper">
 
         {aUser === "Jeremy" && (
           <>
-            <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight} aUser={aUser} changeUser={changeUser} />
+            <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight} lightClick={lightClick} aUser={aUser} changeUser={changeUser} />
             {data.map((item, index) => (
               <Card key={index} item={item} period={period} isLight={isLight}/>
             ))}
@@ -96,7 +94,7 @@ function App() {
         {/* <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight} changeUser={changeUser} /> */}
         {aUser === "Charlotte" && (
           <>
-            <User name="Charlotte Smit" handleClick={handleClick} period={period} isLight={isLight} aUser={aUser} changeUser={changeUser}/>
+            <User name="Charlotte Smit" handleClick={handleClick} period={period} isLight={isLight} lightClick={lightClick} aUser={aUser} changeUser={changeUser}/>
             {data2.map((item, index) => (
               <Card key={index} item={item} period={period} isLight={isLight}/>
             ))}

@@ -1,6 +1,8 @@
 import './user.css'
 import img from '../../time-tracking-dashboard-main/images/image-jeremy.png'
 import img2 from '../../time-tracking-dashboard-main/images/image-random.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 export default function User(props) {
 
@@ -25,6 +27,12 @@ export default function User(props) {
                 <div className="userInfos-div2">
                     <div className="div-change">
                         <p onClick={props.changeUser}>Switch user</p>   
+                    </div>
+                    <div className="div-mode">
+                        <div className="toggle-div px-1 py-1" onClick={props.lightClick}>
+                        <FontAwesomeIcon className={`icon-toggle1 ${props.isLight? 'hidden' : ''}`} icon={faSun} />
+                        <FontAwesomeIcon className={`icon-toggle2 ${props.isLight? '' : 'hidden'}`} icon={faMoon} />
+                        </div>
                     </div>
                 </div>
             </div>
