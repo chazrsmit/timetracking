@@ -48,16 +48,15 @@ function App() {
 
   }
 
-
-
   return (
  
     <>
-      <div className="div-mode">
+      <div className={`div-mode ${isLight? 'light' : ''}`}>
         {/* <p id="pMode" className="m-0" onClick={lightClick}>Light mode</p> */}
         <FontAwesomeIcon className={`icon-toggle1 ${isLight? 'hidden' : ''}`} icon={faSun} onClick={lightClick} />
         <FontAwesomeIcon className={`icon-toggle2 ${isLight? '' : 'hidden'}`} icon={faMoon} onClick={lightClick} />
       </div>
+
       <section className="section-wrapper">
         <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight}/>
         {/* Important pour le design: au lieu de mettre <Card /> (ce qui créera un seul component avec toutes les cards), il faut pouvoir les manipuler in individuellement. Du coup, c'est ici qu'il faut faire le map pour avoir 6 components de cards. */}

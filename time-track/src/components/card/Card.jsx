@@ -23,7 +23,9 @@ export default function Card({ item, period, isLight }) {
         <div className={`card-body ${isLight === true ? "light" : ""}`}>
 
             <div className="d-flex justify-content-between align-items-center">
-                <h6>{item.title}</h6>
+                <div className="div-titre">
+                  <h6>{item.title}</h6>
+                </div>
                 <div className="d-flex align-items-center">
                   <p className="dots">...</p>
                 </div>
@@ -32,21 +34,30 @@ export default function Card({ item, period, isLight }) {
             {period === "daily" && (
               <div className="times">
                 <h1>{item.timeframes.daily.current}hrs</h1>
-                <p className="last">Last week: {item.timeframes.daily.previous}hrs</p>
+                <div className="last">
+                  <p>Last week:</p>
+                  <p>&nbsp;{item.timeframes.daily.previous}hrs</p>
+                </div>
               </div>
             )}
 
             {period === "weekly" && (
               <div className="times">
                 <h1>{item.timeframes.weekly.current}hrs</h1>
-                <p className="last">Last week: {item.timeframes.weekly.previous}hrs</p>
+                <div className="last">
+                  <p>Last week:</p>
+                  <p>&nbsp;{item.timeframes.daily.previous}hrs</p>
+                </div>
               </div>
             )}
 
             {period === "monthly" && (
               <div className="times">
                 <h1>{item.timeframes.monthly.current}hrs</h1>
-                <p className="last">Last week: {item.timeframes.monthly.previous}hrs</p>
+                <div className="last">
+                  <p>Last week:</p>
+                  <p>&nbsp;{item.timeframes.daily.previous}hrs</p>
+                </div>
               </div>
             )}
 

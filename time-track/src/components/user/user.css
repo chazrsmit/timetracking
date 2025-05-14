@@ -103,7 +103,8 @@
 }
 
 /* tablettes */
-@media (min-width: 568px) {
+@media (min-width: 650px) {
+    /* On indique seulement le comportement dans le grid de l'enfant "user" car les autres enfants se mettront automatiquement dans une seule case */
     .user {
         grid-column: 1 / span 2;
         grid-row: auto;

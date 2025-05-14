@@ -16,6 +16,7 @@
 .cards {
     height: auto;
     display: flex;
+    /* width: auto; */
     flex-direction: column;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -131,12 +132,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
 }
-
-/* .times h1 {
-    border : solid white 1px;
-} */
 
 .times p {
     text-align: right;
@@ -144,8 +141,18 @@
 }
 
 .last {
-    width: 100px;
-    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.last p {
+    margin: 0;
+    padding: 0;
+}
+
+.div-titre {
+    flex-wrap: nowrap;
 }
 
 @media (min-width:1023px) {
@@ -160,17 +167,15 @@
     }
 
     .last {
-        width: auto;
+        flex-direction: row;
 }
+    .cards {
+        min-width: 21vw;
+    }
 
 }
 
 /* Polices */
-
-/* .last {
-    color: hsl(236, 100%, 87%);
-    font-weight: 300;
-} */
 
 .times p {
     color: hsl(236, 100%, 87%);
@@ -184,7 +189,3 @@
 .card-body h1 {
     font-size: 56px;
 }
-
-/* .none {
-    display: none;
-} */
