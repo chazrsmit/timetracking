@@ -1,5 +1,6 @@
 import './user.css'
 import img from '../../time-tracking-dashboard-main/images/image-jeremy.png'
+import img2 from '../../time-tracking-dashboard-main/images/image-random.png'
 
 export default function User(props) {
 
@@ -9,7 +10,12 @@ export default function User(props) {
             <div className={`user-infos ${props.isLight === true ? "light" : ""}`}>
                 <div className="userInfos-div1">
                     <div className="div-img">
+                        {props.aUser === "Jeremy" && (
                         <img src={img} alt={props.name} />
+                        )}
+                        {props.aUser === "Charlotte" && (
+                        <img src={img2} alt={props.name} />
+                        )}
                     </div>
                     <div className='d-flex flex-column justify-content-center'>
                         <p className="m-0">Report for</p>

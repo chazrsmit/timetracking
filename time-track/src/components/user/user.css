@@ -76,6 +76,11 @@
     opacity: 0.5;
     font-weight: 300;
     font-size: 18px;
+    transition: all 0.1s ease-in;
+}
+
+#daily:hover, #weekly:hover, #monthly:hover {
+    font-weight: 400;
 }
 
 #daily.light, #weekly.light, #monthly.light {
@@ -87,6 +92,10 @@
     opacity: 1;
     font-weight: 600;
     color: white !important;
+}
+
+#daily.clicked:hover, #weekly.clicked:hover, #monthly.clicked:hover {
+    font-weight: 700;
 }
 
 #daily.clicked.light, #weekly.clicked.light, #monthly.clicked.light {

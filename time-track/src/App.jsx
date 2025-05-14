@@ -87,7 +87,7 @@ function App() {
 
         {aUser === "Jeremy" && (
           <>
-            <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight} changeUser={changeUser} />
+            <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight} aUser={aUser} changeUser={changeUser} />
             {data.map((item, index) => (
               <Card key={index} item={item} period={period} isLight={isLight}/>
             ))}
@@ -96,7 +96,7 @@ function App() {
         {/* <User name="Jeremy Robson" handleClick={handleClick} period={period} isLight={isLight} changeUser={changeUser} /> */}
         {aUser === "Charlotte" && (
           <>
-            <User name="Charlotte Smit" handleClick={handleClick} period={period} isLight={isLight} changeUser={changeUser}/>
+            <User name="Charlotte Smit" handleClick={handleClick} period={period} isLight={isLight} aUser={aUser} changeUser={changeUser}/>
             {data2.map((item, index) => (
               <Card key={index} item={item} period={period} isLight={isLight}/>
             ))}
