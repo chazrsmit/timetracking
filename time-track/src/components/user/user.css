@@ -53,6 +53,10 @@
     opacity: 0.7;
 }
 
+.div-change {
+    cursor: pointer;
+}
+
 .user-frequency {
     padding: 30px;
     flex: 1;
@@ -66,10 +70,6 @@
     color: hsl(236, 100%, 87%);
     margin: 0;
 }
-
-/* .user-frequency.light {
-    background-color: #d8dad3;
-} */
 
 #daily, #weekly, #monthly {
     cursor: pointer;
@@ -103,7 +103,7 @@
 
     .user-infos {
         padding-top: 50px;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
         flex-direction: column;
         justify-content: space-between;
         gap: 24px;

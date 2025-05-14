@@ -60,7 +60,7 @@ body {
   }
 
   .section-wrapper {
-    padding-top: 6vw;
+    padding-top: 5vw;
     padding-left: clamp(10px, 5vw, 60px);
     padding-right: clamp(10px, 5vw, 60px);
     grid-template-columns: repeat(4, 1fr);

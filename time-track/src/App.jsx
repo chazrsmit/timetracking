@@ -48,11 +48,13 @@ function App() {
     if (!isLight) { 
       setIsLight(true)
       document.body.style.backgroundColor = "#EEE1E7"
+      document.body.style.transition = "all 0.2s"
     }
 
     else {
       setIsLight(false)
       document.body.style.backgroundColor = "hsl(226, 43%, 10%)"
+      document.body.style.transition = "all 0.2s"
     }
 
   }
